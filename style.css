@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    max-width: 650px;
+    max-height: 450px;
+    background: #fff;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.card-img {
+    width: 50%;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-img-2 {
+    display: none;
+}
+
+.card-discription {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 25px 30px 15px;
+    box-sizing: inherit;
+}
+
+.card-name {
+    font-weight: 500;
+    margin-bottom: 25px;
+    letter-spacing: 4px;
+}
+
+.card-title {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 2.5em;
+    line-height: 1em;
+    margin-bottom: 25px;
+}
+.card-text {
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.parfume-discription {
+    display: none;
+}
+
+.prices {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.price-current {
+    width: 50%;
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+}
+
+.price-old {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-decoration: line-through;
+}
+
+.card-btn {
+    background-color: #3D8168;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-btn:hover {
+    background-color: #1A4031;
+}
+
+.text-grey {
+    color: hsl(228, 12%, 48%);
+}
+
+.text-green {
+    color: #3D8168;
+}
+
+/* --------media-queries----------------------------------------------------------------------------------------------------------- */
+
+/*  ***********max-width: 700px******************************************************************************************************/
+@media (max-width: 700px) {
+    .card {
+        max-width: 500px;
+        max-height: 350px;
+    }
+    .card-discription {
+        padding: 10px 10px 5px;
+    }
+    
+    .card-name {
+        margin-bottom: 15px;
+        letter-spacing: 4px;
+    }
+    
+    .card-title {
+        font-size: 2em;
+        line-height: 1em;
+        margin-bottom: 15px;
+    }
+    .card-text {
+        line-height: 20px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .prices {
+        display: flex;
+        margin-bottom: 15px;
+        gap: 10px;
+    }
+    
+    .price-current {
+        width: 50%;
+        font-family: 'Fraunces', serif;
+        font-size: 2em;
+    }
+    
+    .price-old {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        text-decoration: line-through;
+    }
+    
+    .card-btn {
+        background-color: #3D8168;
+        padding: 15px;
+        border-radius: 10px;
+        border: 0;
+        color: #fff;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .card-btn:hover {
+        background-color: #1A4031;
+    }
+    
+    .text-grey {
+        color: hsl(228, 12%, 48%);
+    }
+    
+    .text-green {
+        color: #3D8168;
+    }
+}
+
+/* *******max-width: 530px************************************************************************************************************ */
+
+@media (max-width: 530px) {
+    .card {
+        max-width: 350px;
+        max-height: 250px;
+    }
+
+    .card-discription {
+        padding: 5px 5px 10px;
+    }
+    
+    .card-name {
+        font-size: 11px;
+        margin-bottom: 10px;
+        letter-spacing: 4px;
+    }
+    
+    .card-title {
+        font-size: 1.5em;
+        line-height: 0.9em;
+        margin-bottom: 10px;
+    }
+    .card-text {
+        display: none;
+    }
+
+    .parfume-discription {
+        display: block;
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .parfume-discription:hover {
+        color: #1A4031;
+    }
+
+    .prices {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        gap: 0;
+    }
+    
+    .price-current {
+        width: 100%;
+        font-family: 'Fraunces', serif;
+        font-size: 2em;
+    }
+    
+    .price-old {
+        width: 100%;
+        font-size: 17px;
+    }
+    
+    .card-btn {
+        padding: 15px;
+        font-size: 17px;
+    }
+    
+    .card-btn:hover {
+        background-color: #1A4031;
+    }
+    
+    .text-grey {
+        color: hsl(228, 12%, 48%);
+    }
+    
+    .text-green {
+        color: #3D8168;
+    }
+}
+
+/* *******max-width: 380px************************************************************************************************************ */
+@media (max-width: 380px) {
+    .card {
+        max-width: 350px;
+        max-height: 550px;
+        flex-direction: column;
+    }
+
+    .card-img {
+        display: none;
+    }
+
+    .card-img-2 {
+        display: block;
+        width: 100%;
+        height: 40%;
+    }
+
+    .card-img-2 img {
+        max-width: 100%;
+        max-height: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .card-discription {
+        padding: 5px 5px 10px;
+        width: 100%;
+        height: 60%;
+        padding: 10px 20px 15px;
+    }
+    
+    .card-name {
+        margin-bottom: 10px;
+        letter-spacing: 4px;
+    }
+    
+    .card-title {
+        font-size: 2em;
+        line-height: 1em;
+        margin-bottom: 10px;
+    }
+    .card-text {
+        display: block;
+    }
+
+    .parfume-discription {
+        display: none;
+    }
+
+    .parfume-discription:hover {
+        color: #1A4031;
+    }
+
+    .prices {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+        gap: 0;
+    }
+    
+    .price-current {
+        width: 100%;
+        font-family: 'Fraunces', serif;
+        font-size: 2em;
+    }
+    
+    .price-old {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    .card-btn {
+        padding: 15px;
+        font-size: 17px;
+    }
+    
+    .card-btn:hover {
+        background-color: #1A4031;
+    }
+    
+    .text-grey {
+        color: hsl(228, 12%, 48%);
+    }
+    
+    .text-green {
+        color: #3D8168;
+    }
+}
