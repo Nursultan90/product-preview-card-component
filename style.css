@@ -9,12 +9,16 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
+
 a {
     text-decoration: none;
 }
 
 .container {
     padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 100vh; 
 }
 
 .card {
